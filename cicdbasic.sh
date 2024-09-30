@@ -15,9 +15,9 @@ cp $JAR_FILE $DEPLOY_DIR/$JAR_FILE
 
 # Spring Boot 애플리케이션 재시작
 # 기존 8080 포트 사용 중인 프로세스 종료
-if sudo lsof -i :8999 > /dev/null; then
+if  lsof -i :8999 > /dev/null; then
   # 8080 포트가 사용 중일 경우 이전 프로세스를 종료
-  sudo kill -9 $(sudo lsof -t -i:8999)
+   kill -9 $( lsof -t -i:8999)
 fi
 
 # 백그라운드에서 새로 실행
