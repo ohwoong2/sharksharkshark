@@ -14,4 +14,10 @@ public class ProcessController {
 		log.info("요청 수락 ~~~");
 		return "linux 서버에서 실행되는 app";
 	}
+	@GetMapping("/test2")
+	public String reqRes2() {
+		log.info("요청 수락2 ~~~");
+		return "linux 서버에서 실행되는 app2";
+	}
+	
 }
