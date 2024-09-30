@@ -40,7 +40,7 @@ fi
 
 # 백그라운드에서 새로 실행
 echo "Starting new application..."
-if nohup java -jar "$DEPLOY_DIR/$JAR_FILE" > "$DEPLOY_DIR/app.log" 2>&1 &; then
+if nohup java -jar "$DEPLOY_DIR/$JAR_FILE" > "$DEPLOY_DIR/app.log" 2>&1 & then
     echo "Application started successfully."
 else
     echo "Failed to start the application." >&2
