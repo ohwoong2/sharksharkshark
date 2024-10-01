@@ -16,7 +16,7 @@ public class ProcessController {
 	}
 	@GetMapping("/test2")
 	public String reqRes2() {
-		log.info("요청 수락1w ~~~");
+		log.info("요청 수락1w2 ~~~");
 		return "linux 서버에서 실행되는 app2";
 	}
 	@GetMapping("/test3")
